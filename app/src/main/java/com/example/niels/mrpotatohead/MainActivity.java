@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,12 +16,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void checkClicked(View v) {
-        CheckBox checkBox = (CheckBox) v;
-        String text = "";
 
-        Log.d("potato", "checkClicked: ");
+        CheckBox checkBox = (CheckBox) v;
+        String text;
+
+        text = checkBox.getText().toString();
+        ImageView image = findViewById(R.id.text);
+
         if (checkBox.isChecked()) {
-            text = checkBox.getText().toString();
+            image.setVisibility(View.VISIBLE);
+        }
+        else {
+            image.setVisibility(View.INVISIBLE);
         }
 
         System.out.println(text);
