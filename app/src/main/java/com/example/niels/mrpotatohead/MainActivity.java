@@ -41,28 +41,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
 
-        //
-        ImageView Arms = findViewById(R.id.Arms);
-        ImageView Ears = findViewById(R.id.Ears);
-        ImageView Eyebrows = findViewById(R.id.EyeBrows);
-        ImageView Eyes = findViewById(R.id.Eyes);
-        ImageView Glasses = findViewById(R.id.Glasses);
-        ImageView Hat = findViewById(R.id.Hat);
-        ImageView Mouth = findViewById(R.id.Mouth);
-        ImageView Moustache = findViewById(R.id.Moustache);
-        ImageView Nose = findViewById(R.id.Nose);
-        ImageView Shoes = findViewById(R.id.Shoes);
-
-        outState.putBoolean("ArmsVis", (Arms.getVisibility() == VISIBLE));
-        outState.putBoolean("EarsVis", (Ears.getVisibility() == VISIBLE));
-        outState.putBoolean("EyebrowsVis", (Eyebrows.getVisibility() == VISIBLE));
-        outState.putBoolean("EyesVis", (Eyes.getVisibility() == VISIBLE));
-        outState.putBoolean("GlassesVis", (Glasses.getVisibility() == VISIBLE));
-        outState.putBoolean("HatVis", (Hat.getVisibility() == VISIBLE));
-        outState.putBoolean("MouthVis", (Mouth.getVisibility() == VISIBLE));
-        outState.putBoolean("MoustacheVis", (Moustache.getVisibility() == VISIBLE));
-        outState.putBoolean("NoseVis", (Nose.getVisibility() == VISIBLE));
-        outState.putBoolean("ShoesVis", (Shoes.getVisibility() == VISIBLE));
+        // Saves the a TRUE in outState when visible and FALSE when invisible
+        outState.putBoolean("ArmsVis", (findViewById(R.id.Arms).getVisibility() == VISIBLE));
+        outState.putBoolean("EarsVis", (findViewById(R.id.Ears).getVisibility() == VISIBLE));
+        outState.putBoolean("EyebrowsVis", (findViewById(R.id.EyeBrows).getVisibility() == VISIBLE));
+        outState.putBoolean("EyesVis", (findViewById(R.id.Eyes).getVisibility() == VISIBLE));
+        outState.putBoolean("GlassesVis", (findViewById(R.id.Glasses).getVisibility() == VISIBLE));
+        outState.putBoolean("HatVis", (findViewById(R.id.Hat).getVisibility() == VISIBLE));
+        outState.putBoolean("MouthVis", (findViewById(R.id.Mouth).getVisibility() == VISIBLE));
+        outState.putBoolean("MoustacheVis", (findViewById(R.id.Moustache).getVisibility() == VISIBLE));
+        outState.putBoolean("NoseVis", (findViewById(R.id.Nose).getVisibility() == VISIBLE));
+        outState.putBoolean("ShoesVis", (findViewById(R.id.Shoes).getVisibility() == VISIBLE));
 
 
     }
@@ -71,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
 
+        // Checks and restores the visibility of the images when device is turned
         if (savedInstanceState.getBoolean("ArmsVis")) {
             findViewById(R.id.Arms).setVisibility(VISIBLE);
         }
