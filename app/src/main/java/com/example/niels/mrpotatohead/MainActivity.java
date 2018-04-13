@@ -23,9 +23,13 @@ public class MainActivity extends AppCompatActivity {
 
         // Initializes the variables
         CheckBox checkBox = (CheckBox) v;
-        String text = checkBox.getText().toString();
-        int id = getResources().getIdentifier(text, "id", getPackageName());
-        ImageView image = findViewById(id);
+
+        // By using the tag to find the view the app is translatable
+        String tag = checkBox.getTag().toString();
+
+        // Finds the imageView corresponding to the checkBox clicked
+        ImageView image = findViewById(getResources().getIdentifier(tag, "id", getPackageName()));
+
 
         // Makes the image visible or invisible
         if (checkBox.isChecked()) {

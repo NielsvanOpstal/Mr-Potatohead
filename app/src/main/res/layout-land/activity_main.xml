@@ -115,6 +115,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="checkClicked"
+            android:tag="Arms"
             android:text="@string/Arms"
             app:layout_column="4"
             app:layout_row="1"
@@ -125,6 +126,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="checkClicked"
+            android:tag="Ears"
             android:text="@string/Ears"
             app:layout_column="4"
             app:layout_row="2"
@@ -135,6 +137,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="checkClicked"
+            android:tag="EyeBrows"
             android:text="@string/EyeBrows"
             app:layout_column="4"
             app:layout_row="3" />
@@ -144,6 +147,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="checkClicked"
+            android:tag="Eyes"
             android:text="@string/Eyes"
             app:layout_column="4"
             app:layout_row="4" />
@@ -153,6 +157,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="checkClicked"
+            android:tag="Glasses"
             android:text="@string/Glasses"
             app:layout_column="4"
             app:layout_row="5"
@@ -163,6 +168,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="checkClicked"
+            android:tag="Hat"
             android:text="@string/Hat"
             app:layout_column="5"
             app:layout_row="1" />
@@ -172,6 +178,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="checkClicked"
+            android:tag="Mouth"
             android:text="@string/Mouth"
             app:layout_column="5"
             app:layout_row="2" />
@@ -181,6 +188,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="checkClicked"
+            android:tag="Moustache"
             android:text="@string/Moustache"
             app:layout_column="5"
             app:layout_row="3" />
@@ -190,6 +198,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="checkClicked"
+            android:tag="Nose"
             android:text="@string/Nose"
             app:layout_column="5"
             app:layout_row="4" />
@@ -199,6 +208,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="checkClicked"
+            android:tag="Shoes"
             android:text="@string/Shoes"
             app:layout_column="5"
             app:layout_row="5" />
