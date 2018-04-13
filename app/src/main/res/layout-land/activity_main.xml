@@ -13,12 +13,11 @@
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gridLayout"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/Body"
@@ -102,13 +101,14 @@
     <android.support.v7.widget.GridLayout
         android:id="@+id/gridLayout"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.51">
 
         <CheckBox
             android:id="@+id/checkBoxArms"
@@ -117,7 +117,7 @@
             android:onClick="checkClicked"
             android:text="@string/Arms"
             app:layout_column="4"
-            app:layout_row="0"
+            app:layout_row="1"
             tools:text="Arms" />
 
         <CheckBox
@@ -127,7 +127,7 @@
             android:onClick="checkClicked"
             android:text="@string/Ears"
             app:layout_column="4"
-            app:layout_row="1"
+            app:layout_row="2"
             tools:text="Ears" />
 
         <CheckBox
@@ -137,7 +137,7 @@
             android:onClick="checkClicked"
             android:text="@string/EyeBrows"
             app:layout_column="4"
-            app:layout_row="2" />
+            app:layout_row="3" />
 
         <CheckBox
             android:id="@+id/checkBoxEyes"
@@ -146,7 +146,7 @@
             android:onClick="checkClicked"
             android:text="@string/Eyes"
             app:layout_column="4"
-            app:layout_row="3" />
+            app:layout_row="4" />
 
         <CheckBox
             android:id="@+id/checkBoxGlasses"
@@ -155,7 +155,7 @@
             android:onClick="checkClicked"
             android:text="@string/Glasses"
             app:layout_column="4"
-            app:layout_row="4"
+            app:layout_row="5"
             tools:ignore="HardcodedText" />
 
         <CheckBox
@@ -165,7 +165,7 @@
             android:onClick="checkClicked"
             android:text="@string/Hat"
             app:layout_column="5"
-            app:layout_row="0" />
+            app:layout_row="1" />
 
         <CheckBox
             android:id="@+id/checkBoxMouth"
@@ -174,7 +174,7 @@
             android:onClick="checkClicked"
             android:text="@string/Mouth"
             app:layout_column="5"
-            app:layout_row="1" />
+            app:layout_row="2" />
 
         <CheckBox
             android:id="@+id/checkBoxMoustache"
@@ -183,7 +183,7 @@
             android:onClick="checkClicked"
             android:text="@string/Moustache"
             app:layout_column="5"
-            app:layout_row="2" />
+            app:layout_row="3" />
 
         <CheckBox
             android:id="@+id/checkBoxNose"
@@ -192,7 +192,7 @@
             android:onClick="checkClicked"
             android:text="@string/Nose"
             app:layout_column="5"
-            app:layout_row="3" />
+            app:layout_row="4" />
 
         <CheckBox
             android:id="@+id/checkBoxShoes"
@@ -201,6 +201,6 @@
             android:onClick="checkClicked"
             android:text="@string/Shoes"
             app:layout_column="5"
-            app:layout_row="4" />
+            app:layout_row="5" />
     </android.support.v7.widget.GridLayout>
 </android.support.constraint.ConstraintLayout>
